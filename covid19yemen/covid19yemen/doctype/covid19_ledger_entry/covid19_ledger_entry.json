@@ -1,0 +1,124 @@
+{
+ "creation": "2020-07-08 13:44:28.762385",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "governorate",
+  "governorate_name",
+  "district",
+  "district_name",
+  "area",
+  "area_name",
+  "area_describtion",
+  "description",
+  "covid19_type",
+  "covid19_type_name",
+  "posting_date",
+  "posting_time",
+  "count"
+ ],
+ "fields": [
+  {
+   "default": "Other",
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Administrative Division"
+  },
+  {
+   "fetch_from": "governorate.admin_name",
+   "fieldname": "governorate_name",
+   "fieldtype": "Data",
+   "label": "Governorate Name",
+   "read_only": 1
+  },
+  {
+   "default": "Other",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Administrative Division"
+  },
+  {
+   "fetch_from": "district.admin_name",
+   "fieldname": "district_name",
+   "fieldtype": "Data",
+   "label": "District Name"
+  },
+  {
+   "default": "Other",
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Administrative Division"
+  },
+  {
+   "fetch_from": "area.admin_name",
+   "fieldname": "area_name",
+   "fieldtype": "Data",
+   "label": "Area Name"
+  },
+  {
+   "fieldname": "area_describtion",
+   "fieldtype": "Data",
+   "label": "Area Describtion"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "covid19_type",
+   "fieldtype": "Link",
+   "label": "Covid19 Type",
+   "options": "Covid19 Type"
+  },
+  {
+   "fetch_from": "covid19_type.covid_type",
+   "fieldname": "covid19_type_name",
+   "fieldtype": "Data",
+   "label": "Covid19 Type Name"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "label": "Count"
+  }
+ ],
+ "modified": "2020-07-08 16:30:08.315733",
+ "modified_by": "Administrator",
+ "module": "covid19yemen",
+ "name": "Covid19 Ledger Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

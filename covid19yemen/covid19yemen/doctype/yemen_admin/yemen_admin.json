@@ -1,0 +1,126 @@
+{
+ "autoname": "field:admin_code",
+ "creation": "2020-09-19 13:06:10.053016",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "admin_name",
+  "admin_name_en",
+  "admin_code",
+  "admin_type",
+  "population",
+  "disable",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_yemen_admin"
+ ],
+ "fields": [
+  {
+   "fieldname": "admin_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Admin Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "admin_name_en",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Admin Name En"
+  },
+  {
+   "fieldname": "admin_code",
+   "fieldtype": "Data",
+   "label": "Admin Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "admin_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Admin Type",
+   "options": "Country\nGovernate\nDistrict\nArea"
+  },
+  {
+   "default": "0",
+   "fieldname": "population",
+   "fieldtype": "Int",
+   "label": "Population"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Yemen Admin"
+  },
+  {
+   "fieldname": "parent_yemen_admin",
+   "fieldtype": "Link",
+   "label": "Parent Yemen Admin",
+   "options": "Yemen Admin"
+  }
+ ],
+ "is_tree": 1,
+ "modified": "2020-09-19 13:06:19.605529",
+ "modified_by": "Administrator",
+ "module": "covid19yemen",
+ "name": "Yemen Admin",
+ "nsm_parent_field": "parent_yemen_admin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "admin_name,admin_name_en,admin_code,admin_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "admin_name",
+ "track_changes": 1
+}

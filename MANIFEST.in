@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include covid19yemen *.css
+recursive-include covid19yemen *.csv
+recursive-include covid19yemen *.html
+recursive-include covid19yemen *.ico
+recursive-include covid19yemen *.js
+recursive-include covid19yemen *.json
+recursive-include covid19yemen *.md
+recursive-include covid19yemen *.png
+recursive-include covid19yemen *.py
+recursive-include covid19yemen *.svg
+recursive-include covid19yemen *.txt
+recursive-exclude covid19yemen *.pyc

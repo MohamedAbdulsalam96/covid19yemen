@@ -1,0 +1,106 @@
+{
+ "creation": "2020-09-19 13:10:22.231036",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "dead",
+  "injured",
+  "sortie",
+  "loss",
+  "admin1",
+  "admin2",
+  "admin3",
+  "notes",
+  "is_published"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "dead",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dead"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "injured",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Injured"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "sortie",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sortie"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "loss",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Loss"
+  },
+  {
+   "columns": 1,
+   "fieldname": "admin1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Governate",
+   "options": "Yemen Admin"
+  },
+  {
+   "columns": 1,
+   "fieldname": "admin2",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "Yemen Admin"
+  },
+  {
+   "columns": 1,
+   "fieldname": "admin3",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Area",
+   "options": "Yemen Admin"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notes"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-19 14:21:13.152306",
+ "modified_by": "Administrator",
+ "module": "covid19yemen",
+ "name": "Covid19 Entry Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
